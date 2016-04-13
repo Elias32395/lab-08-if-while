@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+//asking for the number
+var num1 = prompt("Number please") 
+var num2 = prompt("Number please") 
+var num3 = prompt("Number please") 
+var num4 = prompt("Number please") 
+//converting to an integer
+var realnum1 = parseInt(num1,10)
+var realnum2 = parseInt(num2,10)
+var realnum3 = parseInt(num3,10)
+var realnum4 = parseInt(num4,10)
+//complicated part..
+if (realnum1 > realnum2)
+	if (realnum1 > realnum3){
+		if (realnum1 > realnum4)
+			console.log ("Largest number is " + num1);
+	}
+else if (realnum1 < realnum2){
+	if (realnum2 > realnum3)
+		if (realnum2 > realnum4)
+			console.log ("Largest number is " + num2);
+}
+else if (realnum2 < realnum3){
+	if (realnum3 > realnum4)
+		if (realnum3 > realnum1)
+			console.log ("Largest number is " + num3);
+}
+else if (realnum3 < realnum4){
+	if (realnum4 > realnum2)
+		if (realnum4 >= realnum1)
+			console.log ("Largest number is " + num4);
+}
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
