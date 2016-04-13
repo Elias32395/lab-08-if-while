@@ -1,2 +1,3 @@
 # lab-08-if-while
-this is lab 8
+this is lab 8.
+
