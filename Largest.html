@@ -3,36 +3,44 @@
 <head>
 <script>
 //asking for the number
-var num1 = prompt("Number please") 
-var num2 = prompt("Number please") 
-var num3 = prompt("Number please") 
-var num4 = prompt("Number please") 
+var num1 = prompt("Number please"); 
+var num2 = prompt("Number please");
+var num3 = prompt("Number please"); 
+var num4 = prompt("Number please"); 
 //converting to an integer
-var realnum1 = parseInt(num1,10)
-var realnum2 = parseInt(num2,10)
-var realnum3 = parseInt(num3,10)
-var realnum4 = parseInt(num4,10)
-//complicated part..
-if (realnum1 > realnum2)
-	if (realnum1 > realnum3){
-		if (realnum1 > realnum4)
-			console.log ("Largest number is " + num1);
+var realnum1 = parseInt(num1,10);
+var realnum2 = parseInt(num2,10);
+var realnum3 = parseInt(num3,10);
+var realnum4 = parseInt(num4,10);
+var largest ;
+var largest2 ;
+var largest3;
+var largestR1 = parseInt(largest,10);
+var largestR2 = parseInt(largest2,10);
+var largestR3 = parseInt(largest3,10);
+//complicated part.. compare numbers in steps and then keep switching largest until you get to realnum4.
+if (realnum1 > realnum2){
+	largest = realnum1
+}else if (realnum2 > realnum1){
+	largest = realnum2
+}
+if (largest < realnum3){
+	largest = realnum3
+	}else if (largest > realnum3){
+		largest = largest
 	}
-else if (realnum1 < realnum2){
-	if (realnum2 > realnum3)
-		if (realnum2 > realnum4)
-			console.log ("Largest number is " + num2);
+if (largest < realnum4){
+	console.log (realnum4)
 }
-else if (realnum2 < realnum3){
-	if (realnum3 > realnum4)
-		if (realnum3 > realnum1)
-			console.log ("Largest number is " + num3);
+else if (largest > realnum4){
+	console.log (largest)
 }
-else if (realnum3 < realnum4){
-	if (realnum4 > realnum2)
-		if (realnum4 >= realnum1)
-			console.log ("Largest number is " + num4);
-}
+
+
+		
+
+
+
 
 
 
